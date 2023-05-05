@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Site Banco de Dados</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="projetoBD.css">
+  <style>
+         .nav-btn {
+        background-color: #ddd;
+        border: none;
+        color: #333;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 5px 2px;
+        cursor: pointer;
+      }
+      .sub-menu {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      .nav-btn:hover .sub-menu {
+        display: block;
+      }
+    </style>
+
+</head>
+<body>
+
+	<div class="dropdown">
+	  <button class="dropbtn">Menu</button>
+	  <div class="dropdown-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	  </div>
+	</div>
+	<header>
+            <nav>
+        <button class="nav-btn">Início</button>
+        <button class="nav-btn">Sobre
+          <div class="sub-menu">
+            <a href="#">História</a>
+            <a href="#">Equipe</a>
+            <a href="#">Missão e Visão</a>
+          </div>
+        </button>
+        <button class="nav-btn">Serviços
+          <div class="sub-menu">
+            <a href="#">Design Gráfico</a>
+            <a href="#">Desenvolvimento Web</a>
+            <a href="#">Marketing Digital</a>
+          </div>
+        </button>
+        <button class="nav-btn">Contato</button>
+      </nav>
+    </header>
+	<div class="sidebar">
+  <ul>
+    <li><a href="#">Início</a></li>
+    <li><a href="#">Sobre</a></li>
+    <li><a href="#">Serviços</a></li>
+    <li><a href="#">Contato</a></li>
+  </ul>
+</div>
+	
+  <div class="container">
+    <h1>Welcome to my website!</h1>
+    <p>Este site utiliza Bootstrap.</p>
+  </div>
+</body>
+</html>
+	
